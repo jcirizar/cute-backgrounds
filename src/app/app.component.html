@@ -1,0 +1,13 @@
+<div class="background-target" [ngxFlickrBackgrounds]="backgroundOptions">
+
+
+  <ngx-flickr-backgrounds [options]="{interval: 20, tag: 'road'}">
+    <h1>Welcome to Cute Backgrounds, this is a component and the page has a rotating background using a directive</h1>
+
+    <div class="buttons">
+      <button (click)="changeBackgroundTo('birds')">Change Bg to Birds</button>
+      <button (click)="changeBackgroundTo('whales')">Change Bg to Whales</button>
+    </div>
+  </ngx-flickr-backgrounds>
+</div>
+
