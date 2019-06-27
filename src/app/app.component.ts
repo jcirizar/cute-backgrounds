@@ -7,7 +7,6 @@ import {FlickrBackgroundsOptions} from '../../projects/flickr-backgrounds/src/li
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'cute-backgrounds';
   backgroundOptions: FlickrBackgroundsOptions;
 
   constructor() {
@@ -17,7 +16,6 @@ export class AppComponent implements OnInit {
   changeBackgroundTo(tag: string) {
     this.backgroundOptions.tag = tag;
     this.backgroundOptions = Object.assign({}, this.backgroundOptions, {tag});
-    console.log('|=> AppComponent.changeBackgroundTo() tag', tag);
   }
 
   ngOnInit(): void {

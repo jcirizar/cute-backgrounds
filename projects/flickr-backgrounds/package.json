@@ -1,6 +1,15 @@
 {
   "name": "flickr-backgrounds",
-  "version": "0.0.1",
+  "author": "Juan C Irizar",
+  "keywords": [
+    "angular",
+    "angular2",
+    "flickr",
+    "backgrounds"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jcirizar/cute-backgrounds/tree/master/projects/flickr-backgrounds",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^8.0.1",
     "@angular/core": "^8.0.1"

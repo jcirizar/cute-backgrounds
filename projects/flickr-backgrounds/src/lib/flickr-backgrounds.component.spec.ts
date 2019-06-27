@@ -1,6 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FlickrBackgroundsComponent } from './flickr-backgrounds.component';
+import {FlickrBackgroundsComponent} from './flickr-backgrounds.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ApiKeyService} from './flickr-backgrounds.token';
 
 describe('FlickrBackgroundsComponent', () => {
   let component: FlickrBackgroundsComponent;
@@ -8,9 +10,13 @@ describe('FlickrBackgroundsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FlickrBackgroundsComponent ]
+      declarations: [FlickrBackgroundsComponent],
+      imports: [
+        HttpClientModule
+      ],
+      providers: [{provide: ApiKeyService}]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
